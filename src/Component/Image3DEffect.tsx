@@ -60,7 +60,9 @@ const Auto3DImageGallery = ({
           className={`gallery-image-wrapper ${index === currentIndex ? "active" : "hidden"}`}
         >
           <img
-            ref={(el) => (imgRefs.current[index] = el)}
+            ref={(el) => {
+              imgRefs.current[index] = el; // Assign the element to the ref
+            }}
             src={index === currentIndex ? image.src : ""}
             alt={image.alt}
             className="h-full gallery-image-card"

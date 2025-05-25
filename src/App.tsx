@@ -1,6 +1,4 @@
-import { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
 import Home from "./Pages/Home";
 import Categories from "./Pages/Categories";
 import Favorites from "./Pages/Favorites";
